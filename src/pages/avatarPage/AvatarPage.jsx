@@ -50,7 +50,7 @@ export default function AvatarPage({
     if (selectedImg) {
       // console.log("submitting to 1st api");
       axios
-        .post("https://7e4f-103-17-110-127.ngrok-free.app/rec", {
+        .post("https://a38c-103-17-110-127.ngrok-free.app/recgroup", {
           image: capturedImg.split(",")[1],
           choice: selectedImg.split(",")[1],
         })
@@ -89,17 +89,10 @@ export default function AvatarPage({
             key={index}
             onClick={() => {
               setSelectedImgIndex(index);
-              if (index !== 2) {
-                const originalImg = filterOriginalImg(index);
-                base64(originalImg, base64Data => {
-                  setSelectedImg(base64Data);
-                });
-              } else {
-                const originalImg = filterOriginalImg(index);
-                // console.log("working");
-                // console.log("selectedOriginal =>", originalImg);
-                setSelectedImg(originalImg);
-              }
+              const originalImg = filterOriginalImg(index);
+              base64(originalImg, base64Data => {
+                setSelectedImg(base64Data);
+              });
             }}
             className={`${styles.singleContainer} ${
               selectedImgIndex === index ? styles.showSingleContainer : ""

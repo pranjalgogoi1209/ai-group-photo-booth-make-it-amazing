@@ -47,6 +47,15 @@ export default function CameraPage({ setCapturedImg }) {
     img && setImg("");
   };
 
+  // toast options
+  const toastOptions = {
+    position: "top-right",
+    autoClose: 4000,
+    pauseOnHover: false,
+    draggable: true,
+    theme: "light",
+  };
+
   // handle submit
   const handleSubmit = () => {
     if (img) {
@@ -131,6 +140,7 @@ export default function CameraPage({ setCapturedImg }) {
             <img src={submit} alt="sumbit" />
           </div>
         </div>
+        <ToastContainer />
       </footer>
     </div>
   );
