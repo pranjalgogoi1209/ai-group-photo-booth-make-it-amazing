@@ -40,7 +40,7 @@
     gap: 2vw;
     .topBtns {
       /* border: 1px solid #000; */
-      gap: 2vw;
+      /* gap: 2vw; */
       .leftBtn {
       }
       .rightBtn {
@@ -91,7 +91,7 @@
     .footer {
       gap: 3vw;
       .topBtns {
-        gap: 3vw;
+        /* gap: 3vw; */
         .leftBtn {
         }
         .rightBtn {
@@ -142,7 +142,7 @@
     .footer {
       gap: 5vw;
       .topBtns {
-        gap: 5vw;
+        /* gap: 5vw; */
         .leftBtn {
         }
         .rightBtn {

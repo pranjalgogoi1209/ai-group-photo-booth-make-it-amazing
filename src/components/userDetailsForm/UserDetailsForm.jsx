@@ -133,7 +133,7 @@ export default function UserDetailsForm({ setShowUserDetailsForm }) {
                 visible={true}
                 height="20"
                 width="50"
-                color={"#000"}
+                color={"#fff"}
                 radius="9"
                 ariaLabel="three-dots-loading"
                 wrapperStyle={{

@@ -100,7 +100,7 @@ export default function CameraPage({ setCapturedImg }) {
       <footer className={`flex-col-center ${styles.footer}`}>
         <div className={`flex-row-center ${styles.topBtns}`}>
           <div className={styles.leftBtn}>
-            <div
+            {/*  <div
               onClick={handleUploadPicture}
               className={`imgContainer ${styles.imgContainer}`}
             >
@@ -111,7 +111,7 @@ export default function CameraPage({ setCapturedImg }) {
                 onChange={handleUploadPictureChange}
                 style={{ display: "none" }}
               />
-            </div>
+            </div> */}
           </div>
           <div className={styles.rightBtn}>
             {!img && (

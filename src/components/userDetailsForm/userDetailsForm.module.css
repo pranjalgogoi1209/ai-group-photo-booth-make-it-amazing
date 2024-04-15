@@ -72,7 +72,8 @@
         width: 10vw;
         text-align: center;
         border: none;
-        background-color: #ffbe2e;
+        background-color: var(--themeColor);
+        color: #fff;
         outline: none;
         padding: 0.5vw 0;
         font-size: 1.5vw;
@@ -128,7 +129,8 @@
         button {
           width: 20vw;
           height: 6vw;
-          background-color: #ffbe2e;
+          background-color: var(--themeColor);
+          color: #fff;
           padding: 0.5vw 0;
           font-size: 3vw;
           border-radius: 2vw;

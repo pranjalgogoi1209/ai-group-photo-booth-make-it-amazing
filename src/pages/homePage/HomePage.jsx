@@ -12,7 +12,7 @@ import groupPhotoboothText from "./../../assets/homePage/groupPhotoboothText.svg
 
 export default function HomePage({}) {
   const navigate = useNavigate();
-  const [showUserDetailsForm, setShowUserDetailsForm] = useState(false);
+  const [showUserDetailsForm, setShowUserDetailsForm] = useState(true);
 
   const handleSubmit = () => {
     navigate("/camera");
