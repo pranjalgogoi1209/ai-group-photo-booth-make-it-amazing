@@ -1,5 +1,5 @@
 :root {
-  --themeColor: #f79a05;
+  --themeColor: #e23569;
 }
 
 /* a:hover {
@@ -10,7 +10,7 @@
 }
 
 body {
-  border: 0.2vw solid var(--themeColor);
+  /* border: 0.2vw solid var(--themeColor); */
   border-radius: 0.5vw;
   background-image: url("../src/assets/pc-bg.png");
   background-position: center;

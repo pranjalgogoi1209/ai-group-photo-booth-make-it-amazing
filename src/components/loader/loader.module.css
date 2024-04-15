@@ -3,7 +3,7 @@
   height: 10vw;
   display: inline-block;
   position: relative;
-  border: 0.2vw solid #fff;
+  border: 0.2vw solid var(--themeColor);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -11,7 +11,7 @@
   gap: 1%;
   margin-top: 40vw;
   .line {
-    background-color: #fff;
+    background-color: var(--themeColor);
     height: 90%;
     width: 1.7%;
     animation: animloader 1s linear infinite;
@@ -20,11 +20,33 @@
 
 @media all and (min-width: 480px) {
   .Loader {
+    width: 50vw;
+    height: 10vw;
+    display: inline-block;
+    position: relative;
+    border: 0.4vw solid var(--themeColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.1% 0.4%;
+    gap: 1%;
+    margin-top: 20vw;
+    .line {
+      background-color: var(--themeColor);
+      height: 90%;
+      width: 1.7%;
+      animation: animloader 1s linear infinite;
+    }
+  }
+}
+
+@media all and (min-width: 991px) {
+  .Loader {
     width: 30vw;
     height: 5vw;
     display: inline-block;
     position: relative;
-    border: 0.2vw solid #fff;
+    border: 0.2vw solid var(--themeColor);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -32,7 +54,7 @@
     gap: 1%;
     margin-top: 10vw;
     .line {
-      background-color: #fff;
+      background-color: var(--themeColor);
       height: 90%;
       width: 1.7%;
       animation: animloader 1s linear infinite;

@@ -12,6 +12,7 @@ import readyToDownload from "./../../assets/outputPage/readyToDownload.svg";
 import download from "./../../assets/outputPage/download.svg";
 import email from "./../../assets/outputPage/email.svg";
 import qr from "./../../assets/outputPage/qr.svg";
+import home from "./../../assets/outputPage/home.svg";
 
 export default function OutputPage({
   generatedImg,
@@ -33,7 +34,7 @@ export default function OutputPage({
             }}
             className={`imgContainer ${styles.logoContainer}`}
           >
-            <img src={logo} alt="logo" />
+            <img src={home} alt="home" />
           </div>
         </Link>
         <div className={`imgContainer ${styles.textContainer}`}>

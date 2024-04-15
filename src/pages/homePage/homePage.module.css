@@ -71,6 +71,40 @@
 
 @media all and (max-width: 991px) {
   .HomePage {
+    padding: 3vw;
+    gap: 10vw;
+    .header {
+      /* border: 1px solid #000; */
+      flex-direction: column;
+      gap: 3vw;
+      .logoContainer {
+        width: 25vw;
+      }
+      .textContainer {
+        width: 45vw;
+        margin-left: 0;
+      }
+    }
+
+    .main {
+      flex-wrap: wrap;
+      gap: 4vw;
+      .singleContainer {
+        width: 22vw;
+      }
+    }
+
+    .footer {
+      .imgContainer {
+        cursor: pointer;
+        width: 30vw;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .HomePage {
     padding: 4vw;
     gap: 10vw;
     .header {

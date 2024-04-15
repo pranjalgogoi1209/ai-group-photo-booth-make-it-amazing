@@ -6,12 +6,12 @@
     width: 100%;
     justify-content: flex-start;
     .logoContainer {
-      width: 15vw;
+      width: 6vw;
       /* border: 1px solid #000; */
     }
     .textContainer {
       width: 30vw;
-      margin-left: 18.5%;
+      margin-left: 28.5%;
       /* border: 1px solid #000; */
     }
   }
@@ -31,6 +31,36 @@
 
 @media all and (max-width: 991px) {
   .OutputPage {
+    padding: 3vw;
+    gap: 10vw;
+
+    .header {
+      flex-direction: column;
+      gap: 5vw;
+      .logoContainer {
+        width: 10vw;
+      }
+      .textContainer {
+        width: 75vw;
+        margin-left: 0;
+      }
+    }
+
+    .main {
+      width: 45vw;
+    }
+
+    .footer {
+      flex-direction: flex;
+      .imgContainer {
+        width: 30vw;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .OutputPage {
     padding: 4vw;
     gap: 10vw;
 
@@ -38,7 +68,7 @@
       flex-direction: column;
       gap: 5vw;
       .logoContainer {
-        width: 35vw;
+        width: 10vw;
       }
       .textContainer {
         width: 70vw;

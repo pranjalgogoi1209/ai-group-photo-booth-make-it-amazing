@@ -105,7 +105,7 @@ export default function FaceSwapPage({
     <div className={`flex-col-center ${styles.FaceSwapPage}`}>
       <header className={`flex-row-center ${styles.header}`}>
         <div className={`imgContainer ${styles.logoContainer}`}>
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" style={{ opacity: "0" }} />
         </div>
         <div className={`imgContainer ${styles.textContainer}`}>
           <img src={swapYourFaceText} alt="swapYourFaceText" />

@@ -71,6 +71,49 @@
 
 @media all and (max-width: 991px) {
   .AvatarPage {
+    padding: 3vw;
+    gap: 10vw;
+    .header {
+      flex-direction: column;
+      gap: 3vw;
+      .logoContainer {
+        width: 25vw;
+      }
+      .textContainer {
+        width: 65vw;
+        margin-left: 0;
+      }
+    }
+
+    .main {
+      flex-wrap: wrap;
+      gap: 4vw;
+      .singleContainer {
+        width: 22vw;
+        .selectContainer {
+          border: 0.4vw solid var(--themeColor);
+          padding-bottom: 2vw;
+          .selectIcon {
+            width: 6vw;
+          }
+        }
+        .showSelectContainer {
+          opacity: 1;
+        }
+      }
+    }
+
+    .footer {
+      .imgContainer {
+        cursor: pointer;
+        width: 30vw;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .AvatarPage {
     padding: 4vw;
     gap: 15vw;
     .header {
