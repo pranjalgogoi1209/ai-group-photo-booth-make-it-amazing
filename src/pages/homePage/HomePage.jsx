@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./homePage.module.css";
+
 import { useNavigate } from "react-router-dom";
 import { cardsArr } from "../../utils/cardsArr";
+import UserDetailsForm from "../../components/userDetailsForm/UserDetailsForm";
 
 import logo from "./../../assets/logo.png";
 import selectTemplateText from "./../../assets/avatarPage/selectTemplateText.svg";
@@ -10,6 +12,7 @@ import groupPhotoboothText from "./../../assets/homePage/groupPhotoboothText.svg
 
 export default function HomePage({}) {
   const navigate = useNavigate();
+  const [showUserDetailsForm, setShowUserDetailsForm] = useState(true);
 
   const handleSubmit = () => {
     navigate("/camera");
@@ -17,6 +20,10 @@ export default function HomePage({}) {
 
   return (
     <div className={`flex-col-center ${styles.HomePage}`}>
+      {showUserDetailsForm && (
+        <UserDetailsForm setShowUserDetailsForm={setShowUserDetailsForm} />
+      )}
+
       <header className={`flex-row-center ${styles.header}`}>
         <div className={`imgContainer ${styles.logoContainer}`}>
           <img src={logo} alt="logo" />

@@ -1,0 +1,140 @@
+.UserDetailsForm {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 2vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  form {
+    height: 25vw;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    background-color: #fff;
+    border-radius: 2vw;
+    padding: 2vw;
+    main {
+      /* border: 1px solid #000; */
+      margin-top: 2vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2vw;
+      .inputBox {
+        border: 0.2vw solid var(--themeColor);
+        width: 20vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 1vw;
+        background-color: #fff;
+        padding: 1vw;
+        transition: border ease 0.3s;
+        &:hover {
+          border: 2px solid #212121;
+        }
+        input {
+          width: 100%;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          font-size: 1.5vw;
+          font-weight: bold;
+        }
+        svg {
+          font-size: 2vw;
+          width: 15%;
+          /* border: 1px solid black; */
+          color: var(--themeColor);
+        }
+      }
+    }
+
+    footer {
+      /* border: 1px solid #000; */
+      button {
+        width: 20vw;
+        height: 3vw;
+        display: block;
+        width: 10vw;
+        text-align: center;
+        border: none;
+        background-color: #ffbe2e;
+        outline: none;
+        padding: 0.5vw 0;
+        font-size: 1.5vw;
+        font-weight: 600;
+        border-radius: 1vw;
+        cursor: pointer;
+        box-shadow: 0.2vw 0.2vw 0.6vw rgba(0, 0, 0, 0.5);
+        transform: translateY(-0.4vw);
+        transition: all ease 0.5s;
+        &:hover {
+          box-shadow: none;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .UserDetailsForm {
+    form {
+      height: 80vw;
+      width: 80vw;
+      gap: 10vw;
+      border-radius: 4vw;
+      padding: 4vw;
+      main {
+        /* border: 1px solid #000; */
+        margin-top: 2vw;
+        gap: 4vw;
+        .inputBox {
+          border: 0.4vw solid var(--themeColor);
+          width: 70vw;
+          border-radius: 2vw;
+          padding: 2vw;
+          transition: border ease 0.3s;
+          &:hover {
+            border: 0.4vw solid #212121;
+          }
+          input {
+            font-size: 3vw;
+          }
+          svg {
+            font-size: 4vw;
+            width: 30%;
+            color: var(--themeColor);
+          }
+        }
+      }
+
+      footer {
+        /* border: 1px solid #000; */
+        button {
+          width: 20vw;
+          height: 6vw;
+          background-color: #ffbe2e;
+          padding: 0.5vw 0;
+          font-size: 3vw;
+          border-radius: 2vw;
+          box-shadow: 0.4vw 0.4vw 0.8vw rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}
