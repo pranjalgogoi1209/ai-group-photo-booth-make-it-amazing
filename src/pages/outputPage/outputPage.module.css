@@ -1,0 +1,60 @@
+.OutputPage {
+  padding: 2vw;
+  gap: 2vw;
+
+  .header {
+    width: 100%;
+    justify-content: flex-start;
+    .logoContainer {
+      width: 15vw;
+      /* border: 1px solid #000; */
+    }
+    .textContainer {
+      width: 30vw;
+      margin-left: 18.5%;
+      /* border: 1px solid #000; */
+    }
+  }
+
+  .main {
+    width: 19vw;
+  }
+
+  .footer {
+    gap: 1vw;
+    .imgContainer {
+      width: 15vw;
+      cursor: pointer;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .OutputPage {
+    padding: 4vw;
+    gap: 10vw;
+
+    .header {
+      flex-direction: column;
+      gap: 5vw;
+      .logoContainer {
+        width: 35vw;
+      }
+      .textContainer {
+        width: 70vw;
+        margin-left: 0;
+      }
+    }
+
+    .main {
+      width: 55vw;
+    }
+
+    .footer {
+      flex-direction: column;
+      .imgContainer {
+        width: 40vw;
+      }
+    }
+  }
+}
