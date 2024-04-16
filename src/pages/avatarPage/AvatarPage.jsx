@@ -50,7 +50,7 @@ export default function AvatarPage({
     if (selectedImg) {
       // console.log("submitting to 1st api");
       axios
-        .post("https://a38c-103-17-110-127.ngrok-free.app/recgroup", {
+        .post("https://dc34-103-17-110-127.ngrok-free.app/recgroup", {
           image: capturedImg.split(",")[1],
           choice: selectedImg.split(",")[1],
         })
